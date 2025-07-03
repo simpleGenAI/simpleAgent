@@ -1,0 +1,375 @@
+
+
+--- Metadata for `Customer Personal Detail` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `Name`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 10
+  Sample values: ['Cust_1', 'Cust_2', 'Cust_3', 'Cust_4', 'Cust_5']
+  Inferred semantic type: text
+
+Column: `Email`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 10
+  Sample values: ['Cust_1@gmail.com', 'Cust_2@gmail.com', 'Cust_3@gmail.com', 'Cust_4@gmail.com', 'Cust_5@gmail.com']
+  Inferred semantic type: text
+
+Column: `Age`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 13
+  Sample values: ['29', '50', '40', '37', '33']
+  Min: 29, Max: 62, Avg: 42.3333, StdDev: 8.836791775802398
+  Inferred semantic type: numerical
+
+Column: `Registration ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 10
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 10, Avg: 4.6667, StdDev: 2.748737083745107
+  Inferred semantic type: numerical
+
+Column: ` Date`
+  Type: datetime
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['2020-01-01 00:00:00', '2020-06-01 00:00:00', '2020-11-01 00:00:00', '2021-04-01 00:00:00', '2021-09-01 00:00:00']
+  Inferred semantic type: datetime
+
+
+--- Metadata for `DMP` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `CPD_ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `DMP Plan`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 4
+  Sample values: ['G', 'P2', 'M', 'P2', 'P1']
+  Inferred semantic type: text
+
+Column: `DMP Start Date`
+  Type: datetime
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['2020-01-20 00:00:00', '2020-06-20 00:00:00', '2020-11-20 00:00:00', '2021-04-20 00:00:00', '2021-09-20 00:00:00']
+  Inferred semantic type: datetime
+
+Column: `CURRENT DMP STATUS`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 6
+  Sample values: ['Withdraw', 'Settled', 'Withdraw', 'Lapsed', 'Terminated']
+  Inferred semantic type: text
+
+Column: `LAST DMP Status Update date`
+  Type: datetime
+  Total rows: 15, Nulls: 0, Unique: 14
+  Sample values: ['2021-01-20 00:00:00', '2021-06-20 00:00:00', '2021-11-20 00:00:00', '2021-05-20 00:00:00', '2022-04-20 00:00:00']
+  Inferred semantic type: datetime
+
+
+--- Metadata for `Employment` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `CPD_ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `Employment`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 2
+  Sample values: ['Employed', 'Unemployed', 'Employed', 'Unemployed', 'Employed']
+  Inferred semantic type: categorical
+
+Column: `Employer`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 3
+  Sample values: ['Government', 'Private', 'Military', 'Private', 'Private']
+  Inferred semantic type: text
+
+
+--- Metadata for `Expenses` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `CPD_ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `Expenses`
+  Type: double
+  Total rows: 15, Nulls: 0, Unique: 14
+  Sample values: ['2100.0', '2080.0', '2600.0', '2800.0', '2400.0']
+  Min: 2080.0, Max: 5000.0, Avg: 3106.2967618189628, StdDev: 817.7810305576123
+  Inferred semantic type: numerical
+
+
+--- Metadata for `Income` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `CPD_ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `Total Income`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 5
+  Sample values: ['3000', '3000', '3000', '3000', '3500']
+  Min: 3000, Max: 7000, Avg: 4000.0000, StdDev: 1064.581294844754
+  Inferred semantic type: numerical
+
+
+--- Metadata for `Intervention` ---
+
+Column: `InterventionID`
+  Type: bigint
+  Total rows: 16, Nulls: 0, Unique: 16
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 16, Avg: 8.5000, StdDev: 4.6097722286464435
+  Inferred semantic type: numerical
+
+Column: `CPDID`
+  Type: bigint
+  Total rows: 16, Nulls: 0, Unique: 5
+  Sample values: ['7', '7', '7', '4', '4']
+  Min: 4, Max: 10, Avg: 7.7500, StdDev: 2.0766559657295187
+  Inferred semantic type: numerical
+
+Column: `Intevention`
+  Type: text
+  Total rows: 16, Nulls: 0, Unique: 3
+  Sample values: ['Email', 'Phone Call', 'Advisor', 'Email', 'Phone Call']
+  Inferred semantic type: categorical
+
+Column: `Intevention Date`
+  Type: datetime
+  Total rows: 16, Nulls: 0, Unique: 14
+  Sample values: ['2023-04-21 00:00:00', '2024-05-21 00:00:00', '2025-02-21 00:00:00', '2021-04-01 00:00:00', '2021-04-10 00:00:00']
+  Inferred semantic type: datetime
+
+Column: `Response`
+  Type: text
+  Total rows: 16, Nulls: 0, Unique: 3
+  Sample values: ['Continue Payment', 'Continue Payment', 'Continue Payment', 'Ignore', 'Ignore']
+  Inferred semantic type: categorical
+
+
+--- Metadata for `Loan` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `CPD_ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `Loan Amount`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 14
+  Sample values: ['11400', '8300', '46000', '50000', '42000']
+  Min: 8300, Max: 61000, Avg: 37113.3333, StdDev: 14410.314207384778
+  Inferred semantic type: numerical
+
+Column: `Current Installment`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 7
+  Sample values: ['2000', '1000', '2500', '2000', '3000']
+  Min: 800, Max: 3000, Avg: 2000.0000, StdDev: 760.7014306984486
+  Inferred semantic type: numerical
+
+Column: `Months In Arrear`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 5
+  Sample values: ['3', '2', '4', '4', '3']
+  Min: 1, Max: 5, Avg: 2.8667, StdDev: 1.2036980056845192
+  Inferred semantic type: numerical
+
+Column: `Bank`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 1
+  Sample values: ['BANK A', 'BANK A', 'BANK A', 'BANK A', 'BANK A']
+  Inferred semantic type: categorical
+
+Column: `Type of Loan`
+  Type: text
+  Total rows: 15, Nulls: 0, Unique: 1
+  Sample values: ['Personl Loan', 'Personl Loan', 'Personl Loan', 'Personl Loan', 'Personl Loan']
+  Inferred semantic type: categorical
+
+
+--- Metadata for `Payment` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 159, Nulls: 0, Unique: 159
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 159, Avg: 80.0000, StdDev: 45.89843860815601
+  Inferred semantic type: numerical
+
+Column: `CPD_ID`
+  Type: bigint
+  Total rows: 159, Nulls: 0, Unique: 13
+  Sample values: ['1', '1', '1', '1', '1']
+  Min: 1, Max: 15, Avg: 7.1950, StdDev: 3.608999909243982
+  Inferred semantic type: numerical
+
+Column: `Payment`
+  Type: bigint
+  Total rows: 159, Nulls: 0, Unique: 13
+  Sample values: ['500', '500', '500', '500', '500']
+  Min: 500, Max: 4000, Avg: 1258.4906, StdDev: 605.4575572941387
+  Inferred semantic type: numerical
+
+Column: `Payment Date`
+  Type: datetime
+  Total rows: 159, Nulls: 0, Unique: 65
+  Sample values: ['2020-01-21 00:00:00', '2020-02-21 00:00:00', '2020-03-21 00:00:00', '2020-04-21 00:00:00', '2020-05-21 00:00:00']
+  Inferred semantic type: datetime
+
+
+--- Metadata for `Registration` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 10, Nulls: 0, Unique: 10
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 10, Avg: 5.5000, StdDev: 2.8722813232690143
+  Inferred semantic type: numerical
+
+Column: `Name`
+  Type: text
+  Total rows: 10, Nulls: 0, Unique: 10
+  Sample values: ['Cust_1', 'Cust_2', 'Cust_3', 'Cust_4', 'Cust_5']
+  Inferred semantic type: text
+
+Column: `Gender`
+  Type: text
+  Total rows: 10, Nulls: 0, Unique: 2
+  Sample values: ['M', 'F', 'M', 'F', 'M']
+  Inferred semantic type: text
+
+Column: `Date of Birth`
+  Type: datetime
+  Total rows: 10, Nulls: 0, Unique: 10
+  Sample values: ['1980-12-02 00:00:00', '1985-05-03 00:00:00', '1982-06-04 00:00:00', '1990-04-04 00:00:00', '1984-12-07 00:00:00']
+  Inferred semantic type: datetime
+
+Column: `Registration Channel`
+  Type: text
+  Total rows: 10, Nulls: 0, Unique: 2
+  Sample values: ['Walk-in', 'Walk-in', 'Walk-in', 'Walk-in', 'Walk-in']
+  Inferred semantic type: text
+
+Column: `Registration date`
+  Type: datetime
+  Total rows: 10, Nulls: 0, Unique: 10
+  Sample values: ['2020-01-01 00:00:00', '2020-06-01 00:00:00', '2020-11-01 00:00:00', '2021-04-01 00:00:00', '2021-09-01 00:00:00']
+  Inferred semantic type: datetime
+
+
+--- Metadata for `Repayment Plan` ---
+
+Column: `ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `CPD_ID`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 15
+  Sample values: ['1', '2', '3', '4', '5']
+  Min: 1, Max: 15, Avg: 8.0000, StdDev: 4.320493798938574
+  Inferred semantic type: numerical
+
+Column: `Total Amount`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 14
+  Sample values: ['17400', '10300', '56000', '58000', '51000']
+  Min: 10300, Max: 67000, Avg: 42606.6667, StdDev: 15509.973851973087
+  Inferred semantic type: numerical
+
+Column: `Installment plan`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 8
+  Sample values: ['500', '800', '1000', '1000', '2000']
+  Min: 500, Max: 2000, Avg: 1200.0000, StdDev: 450.18514709691016
+  Inferred semantic type: numerical
+
+Column: `Month to pay`
+  Type: bigint
+  Total rows: 15, Nulls: 0, Unique: 14
+  Sample values: ['35', '13', '56', '58', '26']
+  Min: 13, Max: 58, Avg: 37.2667, StdDev: 11.963648644493405
+  Inferred semantic type: numerical
+
+
+--- Metadata for `Status Change` ---
+
+Column: `CPDID`
+  Type: bigint
+  Total rows: 33, Nulls: 0, Unique: 15
+  Sample values: ['1', '1', '2', '2', '3']
+  Min: 1, Max: 15, Avg: 7.2727, StdDev: 3.578324707666791
+  Inferred semantic type: numerical
+
+Column: `Status change`
+  Type: text
+  Total rows: 33, Nulls: 0, Unique: 6
+  Sample values: ['Active', 'Withdraw', 'Active', 'Settled', 'Active']
+  Inferred semantic type: categorical
+
+Column: `Change_date`
+  Type: datetime
+  Total rows: 33, Nulls: 0, Unique: 31
+  Sample values: ['2020-01-20 00:00:00', '2021-01-20 00:00:00', '2020-06-20 00:00:00', '2021-06-20 00:00:00', '2020-11-20 00:00:00']
+  Inferred semantic type: datetime
